@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fictional Product Landing Page</title>
+    <link rel="stylesheet" href="styleee.css">
+    </head>
+    <body>
+<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#" class="logo"> <img src="th.jpeg"></a>
+        <ul>
+     <li>
+    <a href="#">Home</a>
+ </li>
+  <li>
+    <a href="#">Menu</a>
+   </li><li>
+    <a href="#">What's New </a>
+     </li>
+   <li>
+    <a href="#">Contact</a>
+ </li>
+  </ul>
+    </header>
+
+
+
+    <div class="content"> 
+       <div class="textBox">
+          <h2>It's not just a coffee<br> It's <span> Semmis</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestiae recusandae ducimus unde corporis obcaecati, officia hic dolore aperiam temporibus nisi dolorum! Eum eius dolorum, deserunt quae quos eligendi nostrum.</p>
+          <a href="#"> Learn More</a>
+     </div>     
+           <div class="imgBox">
+           <img src="download-removebg-preview.png" class="Semmis" width="250px">
+          </div>
+    </div>
+    
+    <ul class="thumb">  
+        <li> <img src="OIP.jpeg"      onclick="imgSlider('OIP-removebg-preview - Copy.png'); changeCircleColor ('#D8B68B')"></li>
+        <li> <img src="OIP (1).jpeg"  onclick="imgSlider('OIP__1_-removebg-preview - Copy.png');  changeCircleColor('#4F2D24')"> </li>
+        <li> <img src="R.png"         onclick="imgSlider('R.png');    changeCircleColor('#471906')"></li>
+
+    </ul>
+
+    <ul class="sci">    
+    <li><a href="#"> <img src="th (1).jpeg"> </a> </li>
+    <li><a href="#"> <img src="download (1).jpeg"> </a></li>
+     <li><a href="#"> <img src="download (2).jpeg"> </a></li>
+    </ul>
+
+
+</section>
+
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.Semmis').src = anything;
+    }
+    function changeCircleColor(color){
+         const circle=document.querySelector('.circle');
+         circle.style.background= color;
+    }
+</script>
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
